@@ -1,0 +1,81 @@
+.background{
+  background-image: linear-gradient(to bottom, mediumpurple, pink, white);
+  height: 100vh;
+}
+
+.amethyst{
+  background-image: url("../public/amethyst.png"); /* BEZ ../public */
+  background-size: cover;
+  background-position: center;
+  width: 75vw;
+  aspect-ratio: 4 / 4;
+  left: 5vw;
+  right: 0;
+  //aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  transform: rotate(175deg);
+  z-index: 0;
+  top: -100vh;
+  position: fixed;
+  align-self: anchor-center;
+
+
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -120rem top;
+  }
+  100% {
+    background-position: -30rem top;
+  }
+}
+
+.pagetitle {
+  z-index: 1;
+  position: relative;
+  font-size: 20vmin;
+  text-align: center;
+  background: linear-gradient(to right, pink , white 80%, pink);
+  background-repeat: repeat;
+  background-size: 160vmin, 20px;
+  //background-position: 100vmin right;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+  text-shadow: 1px 1px 20px aliceblue;
+  animation: shimmer 5s infinite;
+  font-family: "Edwardian Script ITC";
+  padding-top: 5vmin;
+}
+
+
+.catchphrase{
+  @extend .pagetitle;
+  font-size: 3vw;
+  text-shadow: 1px 1px 1vmin white;
+  color: aliceblue;
+  text-align: center;
+  padding-top: 10vw;
+  font-family: "Bodoni MT Poster Compressed";
+}
+
+.getToKnow{
+  @extend .catchphrase;
+  font-size: 5vmin;
+  background: linear-gradient(to right, pink , purple 80%, pink);
+  padding-top: 4vw;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
+
+  &:hover {
+    background: linear-gradient(to right, cyan, darkmagenta 80%, cyan);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+}
