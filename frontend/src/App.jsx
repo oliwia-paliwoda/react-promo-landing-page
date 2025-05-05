@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import React from 'react';
-import './App.css';
-import Home from './Home.js';
+import './App.scss';
+import Home from './Home.jsx';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
