@@ -1,5 +1,12 @@
-.background{
+
+.background {
+
   background-image: linear-gradient(to bottom, mediumpurple, pink, white);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-size 0.5s ease, background-position 0.5s ease;
+
   max-width: 100vw;
   position: relative;
   min-height: 100vh;
@@ -8,6 +15,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 
 
 
@@ -268,4 +276,3 @@
 * {
   scrollbar-color: lightpink transparent;
 }
-
