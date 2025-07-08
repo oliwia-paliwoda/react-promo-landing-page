@@ -20,7 +20,7 @@ function Home() {
                 if (section) {
                     section.scrollIntoView({behavior: 'smooth'});
                 }
-            }, 50);
+            }, 200);
             return () => clearTimeout(timeout);
         }
     }, [expanded]);
@@ -41,10 +41,12 @@ function Home() {
             <div className="top">
                 <div className="pagetitle">{pageTtile}</div>
             <div className="catchphrase">{catchPhrase}</div>
-            <div className="getToKnow">{getToKnow}</div>
+                <div className="getToKnow" onClick={handleExpand}>{getToKnow}</div>
             </div>
 
-
+            { expanded? <div className="main-page" id="section-to-scroll">
+                <div className="test">test</div>
+            </div> : null}
 
         </div>
     );
