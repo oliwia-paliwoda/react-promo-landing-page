@@ -12,6 +12,11 @@ function Home() {
     const pageTtile = "CrystaLite";
     const catchPhrase = "Your favorite crystal detection software...";
     const getToKnow = "Click here to start your journey"
+    const infoPoints = [
+        "Snap. Identify. Shine.",
+        "Know Your Crystals — In a Flash!",
+        "Turn Photos into Crystal Clarity."
+    ]
 
     useEffect(() => {
         if (expanded){
@@ -45,7 +50,20 @@ function Home() {
             </div>
 
             { expanded? <div className="main-page" id="section-to-scroll">
-                <div className="test">test</div>
+                <div className="info-points">
+                    <div className="point-right">
+                        <div className="point-img"></div>
+                        <div className="point-text">{infoPoints[0]}</div>
+                    </div>
+                    <div className="point-left">
+                        <div className="point-text">{infoPoints[1]}</div>
+                        <div className="point-img"></div>
+                    </div>
+                    <div className="point-right">
+                        <div className="point-img"></div>
+                        <div className="point-text">{infoPoints[2]}</div>
+                    </div>
+                </div>
             </div> : null}
 
         </div>
