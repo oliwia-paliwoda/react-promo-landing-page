@@ -52,15 +52,15 @@ function Home() {
             { expanded? <div className="main-page" id="section-to-scroll">
                 <div className="info-points">
                     <div className="point-right">
-                        <div className="point-img"></div>
+                        <img className="point-img1" src="/infopointimg1.png"></img>
                         <div className="point-text">{infoPoints[0]}</div>
                     </div>
                     <div className="point-left">
                         <div className="point-text">{infoPoints[1]}</div>
-                        <div className="point-img"></div>
+                        <img className="point-img2" src="/infopointimg2.png"></img>
                     </div>
                     <div className="point-right">
-                        <div className="point-img"></div>
+                        <img className="point-img3" src="/infopointimg3.png"></img>
                         <div className="point-text">{infoPoints[2]}</div>
                     </div>
                 </div>

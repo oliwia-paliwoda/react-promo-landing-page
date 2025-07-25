@@ -266,9 +266,13 @@
 }
 
 .point-right{
+  margin-left:8vmin;
   align-items: center;
-  width: 30%;
-  background-image: linear-gradient(to left, transparent, white);
+  //width: 40%;
+  background-image: url("../../public/infopointbackground.png");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: left center;
   height: 33vh;
   display: flex;
   justify-content: flex-start;
@@ -276,24 +280,42 @@
 
 .point-left{
   @extend .point-right;
-  justify-content: flex-end;
   margin-left: auto;
-  background-image: linear-gradient(to right, transparent, white);
+  margin-right: 8vmin;
+  background-size: 100% 100%;
+  background-position: right center;
+  justify-content: flex-end;
+  //background-image: linear-gradient(to right, transparent, white);
 }
 
 .point-text{
-  color: indigo;
-  padding: 1vmin;
+  background: linear-gradient(to right, purple , #0effff, #800080);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5vmin;
+  position: relative;
+  text-shadow: 1px 1px 12px aliceblue;
   font-style: italic;
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-family: "Bodoni MT Poster Compressed";
 
 }
 
-.point-img{
-  width:50px;
-  height: 50px;
-  background-color: purple;
+.point-img1{
+  width:15vw;
+  filter: drop-shadow(50px 0px 60px #bcb9e7);
+
+}
+
+.point-img2{
+  width:15vw;
+  filter: drop-shadow(50px 0px 60px #e47d8a);
+}
+
+.point-img3{
+  width:15vw;
+  filter: drop-shadow(50px 0px 60px #47ecf5);
 }
 
 .main-page{
