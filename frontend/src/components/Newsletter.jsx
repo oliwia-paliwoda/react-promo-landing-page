@@ -26,7 +26,7 @@ function Newsletter() {
             return;
         }
 
-        alert(`You've signed up for our newsletter with email ${email}!`);
+        alert(`You've signed up for our newsletter with email "${email}"!`);
     }
 
     return (
