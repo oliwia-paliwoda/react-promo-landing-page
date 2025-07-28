@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import '../styles/Home.scss';
+import Newsletter from "./Newsletter.jsx";
 
 function Home() {
 
@@ -64,7 +65,11 @@ function Home() {
                         <div className="point-text">{infoPoints[2]}</div>
                     </div>
                 </div>
+                <Newsletter/>
+
+
             </div> : null}
+
 
         </div>
     );

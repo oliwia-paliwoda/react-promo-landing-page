@@ -1,0 +1,49 @@
+.newsletter-container{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 5vmin;
+}
+
+.newsletter{
+  display: flex;
+  gap: 1vmin;
+  justify-content: center;
+  height: 5vmin;
+  width: 100%;
+}
+
+.newsletter-title{
+  font-family: "Bodoni MT Poster Compressed";
+  padding: 2vmin;
+  font-size: 2vw;
+  background: linear-gradient(to right, pink , purple 80%, pink);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
+}
+
+.input {
+  border: 2px solid rgba(255,142,155,0.91);
+  color: #e47d8a;
+  border-radius: 1vmin;
+  padding: 1vmin;
+  width: 25%;
+
+}
+
+.button {
+  background: rgba(255,142,155,0.91);
+  padding: 1vmin;
+  font-family: "Bodoni MT Poster Compressed";
+  text-align: center;
+  display: flex;
+  color: antiquewhite;
+  align-items: center;
+  border-radius: 1vmin;
+  cursor: pointer;
+  box-shadow: #e47d8a;
+}
