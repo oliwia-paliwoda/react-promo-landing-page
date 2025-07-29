@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import '../styles/Home.scss';
 import Newsletter from "./Newsletter.jsx";
+import CrystalCard from "./CrystalCard";
 
 function Home() {
 
@@ -18,6 +19,24 @@ function Home() {
         "Know Your Crystals — In a Flash!",
         "Turn Photos into Crystal Clarity."
     ]
+
+    const crystals = [
+        {
+            name: "Amethyst",
+            confidence: Math.floor(Math.random() * 101), // losowa pewność 0-100%
+            description: "Known for its calming energy and spiritual protection."
+        },
+        {
+            name: "Rose Quartz",
+            confidence: Math.floor(Math.random() * 101),
+            description: "Promotes love, self-esteem, and emotional healing."
+        },
+        {
+            name: "Citrine",
+            confidence: Math.floor(Math.random() * 101),
+            description: "Brings positivity, abundance, and clears negative energy."
+        }
+    ];
 
     useEffect(() => {
         if (expanded){
@@ -66,6 +85,14 @@ function Home() {
                     </div>
                 </div>
                 <Newsletter/>
+                <div className="crystal-cards">
+                    <div className="crystal-card-info">Example crystal detections</div>
+                    <div className="crystal-card-horizontal-scroll">
+                    {crystals.map((crystal, index) => (
+                        <CrystalCard key={index} name={crystal.name} confidence={crystal.confidence} description={crystal.description} />
+                        ))}
+                    </div>
+                </div>
 
 
             </div> : null}

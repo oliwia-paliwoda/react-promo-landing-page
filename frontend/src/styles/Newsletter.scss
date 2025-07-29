@@ -24,6 +24,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: lighter;
+  text-shadow: 1px 1px 20px #e47d8a;
 }
 
 .input {
@@ -32,6 +33,7 @@
   border-radius: 1vmin;
   padding: 1vmin;
   width: 25%;
+  box-shadow: 1px 1px 10px #f6baca;
 
 }
 
@@ -45,5 +47,5 @@
   align-items: center;
   border-radius: 1vmin;
   cursor: pointer;
-  box-shadow: #e47d8a;
+  box-shadow: 1px 1px 10px #f6baca;
 }

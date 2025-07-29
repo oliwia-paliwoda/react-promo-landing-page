@@ -334,3 +334,27 @@
 * {
   scrollbar-color: lightpink transparent;
 }
+
+.crystal-cards{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmin;
+  text-align: center;
+}
+
+.crystal-card-info{
+  @extend .getToKnow;
+  background: linear-gradient(to right, #9f79d6, purple 80%, #9f79d6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 20px antiquewhite;
+}
+
+.crystal-card-horizontal-scroll{
+  column-gap: 2vmin;
+  display: flex;
+}
